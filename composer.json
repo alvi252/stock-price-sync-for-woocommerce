@@ -1,0 +1,39 @@
+{
+    "name": "wsps/stock-price-sync-for-woocommerce",
+    "description": "Keep WooCommerce stock and prices in sync with a supplier feed or ERP export (CSV or JSON), matched by SKU.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "keywords": ["wordpress", "woocommerce", "stock", "inventory", "price", "sync", "csv", "json", "wp-cli"],
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "phpunit/phpunit": "^10.5",
+        "wp-coding-standards/wpcs": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "WSPS\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WSPS\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "platform": {
+            "php": "8.1.0"
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit",
+        "lint": "phpcs",
+        "lint:fix": "phpcbf"
+    }
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<ruleset name="Stock and Price Sync for WooCommerce">
+	<description>WordPress Coding Standards for the plugin code.</description>
+
+	<file>.</file>
+	<exclude-pattern>/vendor/*</exclude-pattern>
+	<exclude-pattern>/tests/*</exclude-pattern>
+	<exclude-pattern>/bin/*</exclude-pattern>
+
+	<arg name="extensions" value="php"/>
+	<arg name="parallel" value="8"/>
+	<arg name="colors"/>
+	<arg value="sp"/>
+
+	<config name="minimum_wp_version" value="6.5"/>
+
+	<rule ref="WordPress">
+		<!-- PSR-4 file names (src/Feed/CsvParser.php) instead of class-csv-parser.php. -->
+		<exclude name="WordPress.Files.FileName"/>
+	</rule>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="stock-price-sync-for-woocommerce"/>
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="wsps"/>
+				<element value="WSPS"/>
+			</property>
+		</properties>
+	</rule>
+
+	<!--
+		Exception messages are data, not output: every exception is caught, stored in
+		the run report and escaped where it is displayed (views, notices, WP-CLI).
+		Escaping at throw time would double-escape on display, and the
+		WordPress-independent classes (unit tested without WordPress) cannot call esc_html().
+	-->
+	<rule ref="WordPress.Security.EscapeOutput">
+		<exclude name="WordPress.Security.EscapeOutput.ExceptionNotEscaped"/>
+	</rule>
+</ruleset>

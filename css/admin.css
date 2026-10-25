@@ -1,0 +1,307 @@
+/* Stock & Price Sync for WooCommerce - admin screen. */
+
+.wsps-wrap {
+	max-width: 1180px;
+}
+
+.wsps-wrap .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.wsps-muted {
+	color: #646970;
+}
+
+.wsps-settings h2 {
+	margin-top: 28px;
+	padding-top: 20px;
+	border-top: 1px solid #dcdcde;
+}
+
+.wsps-settings h2:first-of-type {
+	margin-top: 8px;
+	padding-top: 0;
+	border-top: 0;
+}
+
+.wsps-settings select {
+	min-width: 220px;
+}
+
+/* Core styles fieldset labels as inline-block; stack the "Update" checkboxes. */
+.wsps-settings .form-table td fieldset label.wsps-checkbox {
+	display: block;
+}
+
+/* Panel with the feed facts and the main actions. */
+.wsps-panel {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 16px 20px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.wsps-facts {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px 40px;
+	margin: 0 0 16px;
+}
+
+.wsps-facts dt {
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #646970;
+	margin-bottom: 4px;
+}
+
+.wsps-facts dd {
+	margin: 0;
+}
+
+.wsps-facts code {
+	font-size: 12px;
+}
+
+.wsps-tag {
+	display: inline-block;
+	margin-left: 6px;
+	padding: 1px 6px;
+	border: 1px solid #c3c4c7;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 600;
+	color: #50575e;
+}
+
+.wsps-actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px 10px;
+}
+
+.wsps-actions form {
+	margin: 0;
+}
+
+.wsps-actions .description {
+	flex-basis: 100%;
+	margin: 4px 0 0;
+}
+
+/* Preview. */
+.wsps-preview h2 {
+	margin-top: 28px;
+}
+
+.wsps-h-meta {
+	font-size: 13px;
+	font-weight: 400;
+	margin-left: 8px;
+}
+
+.wsps-preview h3 {
+	margin: 24px 0 8px;
+	font-size: 14px;
+}
+
+.wsps-apply {
+	margin-top: 20px;
+}
+
+/* Counters. */
+.wsps-summary {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	gap: 12px;
+	margin: 12px 0 0;
+}
+
+.wsps-summary li {
+	margin: 0;
+	padding: 12px 16px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-left-width: 4px;
+	border-radius: 4px;
+}
+
+.wsps-summary-count {
+	display: block;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.2;
+	color: #1d2327;
+}
+
+.wsps-summary-label {
+	color: #50575e;
+}
+
+.wsps-summary-updated {
+	border-left-color: #00a32a !important;
+}
+
+.wsps-summary-unchanged {
+	border-left-color: #8c8f94 !important;
+}
+
+.wsps-summary-not_found {
+	border-left-color: #2271b1 !important;
+}
+
+.wsps-summary-invalid {
+	border-left-color: #dba617 !important;
+}
+
+.wsps-summary-error {
+	border-left-color: #d63638 !important;
+}
+
+.wsps-summary .is-zero .wsps-summary-count {
+	color: #a7aaad;
+}
+
+/* Tables. */
+.wsps-table td,
+.wsps-table th {
+	vertical-align: middle;
+}
+
+.wsps-table code {
+	font-size: 12px;
+	background: transparent;
+	padding: 0;
+}
+
+.wsps-table .num {
+	text-align: right;
+	color: #1d2327;
+}
+
+.wsps-table .num.wsps-muted {
+	color: #a7aaad;
+}
+
+.wsps-changes .wsps-value-col {
+	width: 110px;
+}
+
+.wsps-arrow-col {
+	width: 24px;
+	text-align: center !important;
+	color: #8c8f94;
+}
+
+.wsps-status-col {
+	width: 110px;
+}
+
+.wsps-row-col {
+	width: 50px;
+}
+
+.wsps-old,
+.wsps-table td.wsps-old {
+	color: #646970;
+	text-decoration: line-through;
+	text-decoration-color: rgba(100, 105, 112, 0.6);
+}
+
+.wsps-old .wsps-muted {
+	text-decoration: none;
+}
+
+.wsps-new,
+.wsps-table td.wsps-new {
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.wsps-change-list {
+	margin: 0;
+}
+
+.wsps-change-list li {
+	margin: 0 0 2px;
+}
+
+.wsps-field {
+	color: #50575e;
+}
+
+/* Status badges. */
+.wsps-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 10px;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.5;
+	white-space: nowrap;
+}
+
+.wsps-badge-updated {
+	background: #edfaef;
+	color: #005c12;
+}
+
+.wsps-badge-unchanged {
+	background: #f0f0f1;
+	color: #50575e;
+}
+
+.wsps-badge-not-found {
+	background: #f0f6fc;
+	color: #0a4b78;
+}
+
+.wsps-badge-invalid {
+	background: #fcf9e8;
+	color: #6e4b00;
+}
+
+.wsps-badge-error {
+	background: #fcf0f1;
+	color: #8a2424;
+}
+
+/* Log. */
+.wsps-log .wsps-run td {
+	white-space: nowrap;
+}
+
+.wsps-toggle-col {
+	text-align: right;
+}
+
+.wsps-run-details > td {
+	background: #f6f7f7;
+	padding: 12px 16px 16px;
+}
+
+.wsps-run-details .wsps-table {
+	background: #fff;
+}
+
+.wsps-empty {
+	background: #fff;
+	border: 1px dashed #c3c4c7;
+	border-radius: 4px;
+	padding: 24px;
+	text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+	.wsps-summary {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.wsps-log .wsps-run td {
+		white-space: normal;
+	}
+}

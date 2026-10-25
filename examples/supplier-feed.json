@@ -1,0 +1,22 @@
+{
+  "supplier": "Example Wholesale",
+  "generated_at": "2026-10-25T06:00:00Z",
+  "currency": "EUR",
+  "items": [
+    { "sku": "DOG-FOOD-2KG", "name": "Grain-Free Dog Food, 2 kg", "stock": 18, "price": { "regular": 18.90, "sale": null } },
+    { "sku": "CAT-FOOD-1500", "name": "Indoor Cat Dry Food, 1.5 kg", "stock": 15, "price": { "regular": 22.90, "sale": null } },
+    { "sku": "CAT-LITTER-10L", "name": "Clumping Cat Litter, 10 L", "stock": 40, "price": { "regular": 9.90, "sale": null } },
+    { "sku": "DOG-LEASH-RED", "name": "Nylon Dog Leash, 1.5 m, Red", "stock": 30, "price": { "regular": 12.50, "sale": null } },
+    { "sku": "BOWL-STEEL-M", "name": "Stainless Steel Bowl, Medium", "stock": 42, "price": { "regular": 7.90, "sale": null } },
+    { "sku": "TOY-ROPE-L", "name": "Cotton Rope Chew Toy, Large", "stock": 18, "price": { "regular": 6.99, "sale": 5.49 } },
+    { "sku": "SHAMPOO-OAT-250", "name": "Oatmeal Pet Shampoo, 250 ml", "stock": 11, "price": { "regular": 8.40, "sale": null } },
+    { "sku": "BRUSH-SLICKER", "name": "Self-Cleaning Slicker Brush", "stock": -3, "price": { "regular": 14.90, "sale": 12.90 } },
+    { "sku": "TREATS-CHICKEN-200", "name": "Chicken Training Treats, 200 g", "stock": 55, "price": { "regular": 4.80, "sale": null } },
+    { "sku": "SCRATCH-POST-60", "name": "Sisal Scratching Post, 60 cm", "stock": 6, "price": { "regular": 24.90, "sale": null } },
+    { "sku": "BED-ORTHO-M", "name": "Orthopedic Pet Bed, Medium", "stock": 4, "price": { "regular": 49.00, "sale": null } },
+    { "sku": "HARNESS-S", "name": "Padded Dog Harness, S", "stock": 8, "price": { "regular": 27.90, "sale": null } },
+    { "sku": "HARNESS-M", "name": "Padded Dog Harness, M", "stock": 3, "price": { "regular": 29.90, "sale": null } },
+    { "sku": "HARNESS-L", "name": "Padded Dog Harness, L", "stock": 2, "price": { "regular": 31.90, "sale": null } },
+    { "sku": "FEEDER-AUTO-2L", "name": "Automatic Pet Feeder, 2 L", "stock": 12, "price": { "regular": 59.00, "sale": null } }
+  ]
+}
